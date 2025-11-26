@@ -1,0 +1,36 @@
+{
+  "name": "ffmpeg-electron-gui",
+  "version": "1.0.0",
+  "description": "A FFMPEG app to do logo editing stuff in Electron.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salagata/ffmpeg-electron-gui.git"
+  },
+  "keywords": [
+    "ffmpeg",
+    "logo",
+    "editing",
+    "video",
+    "editing",
+    "electron",
+    "app"
+  ],
+  "author": "@salagata",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/salagata/ffmpeg-electron-gui/issues"
+  },
+  "homepage": "https://github.com/salagata/ffmpeg-electron-gui#readme",
+  "dependencies": {
+    "ffmpeg-static": "^5.3.0",
+    "fluent-ffmpeg": "^2.1.3"
+  },
+  "devDependencies": {
+    "electron": "^39.2.3"
+  }
+}
