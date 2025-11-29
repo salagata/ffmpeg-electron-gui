@@ -1,7 +1,6 @@
-const pathToFfmpeg = require('ffmpeg-static');
 const path = require("path");
 
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow, ipcMain } = require('electron/main');
 
 const createWindow = () => {
   const win = new BrowserWindow({
@@ -17,6 +16,12 @@ const createWindow = () => {
 
 app.whenReady().then(() => {
   createWindow()
+
+  app.on('activate', () => {
+    if (BrowserWindow.getAllWindows().length === 0) {
+      createWindow()
+    }
+  })
 })
 
 app.on('window-all-closed', () => {
